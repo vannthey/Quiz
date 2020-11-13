@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:ghostwhite;
+            color: black;
+            font-size: 20px;
+            margin-left: 100px;
+            width: 1100px;
+        }
+        h1{
+            text-align: center;
+        }
+        #btn{
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 6px;
+            background-color: grey;
+        }
+        #pt{
+            float: right;
+        }
+        p{
+            font-weight: bolder;
+        }
+    </style>
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <div id="pt">ពិន្ទុ</div><br>
+    <form name="quiz" id="quiz">
+        <div>
+            <p>1.តើ Command line មួយណាប្រើសម្រាប់បង្កើត directory?</p>
+            <span><input type="radio" name="question1" value="mkdir">ក. mkdir</span>
+            <span><input type="radio" name="question1" value="dirmk">ខ. dirmk</span>
+            <span><input type="radio" name="question1" value="mdkir">គ. mdkir</span>
+            <span><input type="radio" name="question1" value="rm">ឃ. rm</span>
+            <span><input type="radio" name="question1" value="dirmk">ង. dirmk</span>
+        </div>
+
+        <div>
+            <p>2. តើ Command line មួយណាប្រើសម្រាប់លុប directory?</p>
+            <span><input type="radio" name="question2" value="mkdir">ក. mkdir</span>
+            <span><input type="radio" name="question2" value="rmdir">ខ. rmdir</span>
+            <span><input type="radio" name="question2" value="mdkir">គ. mdkir</span>
+            <span><input type="radio" name="question2" value="rm">ឃ. rm</span>
+            <span><input type="radio" name="question2" value="dirmk">ង. dirmk</span>
+        </div>
+
+        <div>
+            <p>3. តើ Command line មួយណាប្រើសម្រាប់លុប directory ដែល not empty?</p>
+            <span><input type="radio" name="question3" value="rm -i">ក. rm -i</span>
+            <span><input type="radio" name="question3" value="rmdir">ខ. rmdir</span>
+            <span><input type="radio" name="question3" value="rmdir -r">គ. rmdir -r</span>
+            <span><input type="radio" name="question3" value="rm -r">ឃ. rm -r</span>
+            <span><input type="radio" name="question3" value="dirmk">ង. dirmk</span>
+        </div>
+
+        <div>
+            <p>4. តើ Command line មួយណាប្រើសម្រាប់បង្កើត Text file ដែលអត់មានសរសេរអីបាន?</p>
+            <span><input type="radio" name="question4" value="touch">ក. touch</span>
+            <span><input type="radio" name="question4" value="vi">ខ. vi</span>
+            <span><input type="radio" name="question4" value="mdkir">គ. mdkir</span>
+            <span><input type="radio" name="question4" value="rm">ឃ. rm</span>
+            <span><input type="radio" name="question4" value="cat">ង. cat</span>
+        </div>
+
+        <div>
+            <p>5. តើ Command line មួយណាប្រើសម្រាប់Edit text?</p>
+            <span><input type="radio" name="question5" value="touch namefile">ក. touch namefile</span>
+            <span><input type="radio" name="question5" value="vi namefile">ខ. vi namefile</span>
+            <span><input type="radio" name="question5" value="mdkir">គ. mdkir</span>
+            <span><input type="radio" name="question5" value="rm">ឃ. rm</span>
+            <span><input type="radio" name="question5" value="cat namefile">ង. cat namefile</span>
+        </div>
+
+        <div>
+            <p>6. តើ Command line មួយណាប្រើសម្រាប់បង្កើត User?</p>
+            <span><input type="radio" name="question6" value="adduser">ក. adduser</span>
+            <span><input type="radio" name="question6" value="useradd">ខ. useradd</span>
+            <span><input type="radio" name="question6" value="deluser">គ. deluser</span>
+            <span><input type="radio" name="question6" value="userdel">ឃ. userdel</span>
+            <span><input type="radio" name="question6" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>7. តើ Command line មួយណាប្រើសម្រាប់លុប User?</p>
+            <span><input type="radio" name="question7" value="adduser">ក. adduser</span>
+            <span><input type="radio" name="question7" value="useradd">ខ. useradd</span>
+            <span><input type="radio" name="question7" value="deluser">គ. deluser</span>
+            <span><input type="radio" name="question7" value="userdel">ឃ. userdel</span>
+            <span><input type="radio" name="question7" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>8. តើ Command line មួយណាប្រើសម្រាប់ប្តូរឈ្មោះfile?</p>
+            <span><input type="radio" name="question8" value="adduser">ក. adduser</span>
+            <span><input type="radio" name="question8" value="mv">ខ. mv</span>
+            <span><input type="radio" name="question8" value="deluser">គ. deluser</span>
+            <span><input type="radio" name="question8" value="cp">ឃ. cp</span>
+            <span><input type="radio" name="question8" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>9. តើ Command line មួយណាប្រើសម្រាប់បង្ហាញ User?</p>
+            <span><input type="radio" name="question9" value="getent group">ក. getent group</span>
+            <span><input type="radio" name="question9" value="useradd">ខ. useradd</span>
+            <span><input type="radio" name="question9" value="getent user">គ. getent user</span>
+            <span><input type="radio" name="question9" value="getent paswf">ឃ. getent paswf</span>
+            <span><input type="radio" name="question9" value="getent sudo">ង. getent sudo</span>
+        </div>
+
+        <div>
+            <p>10. តើ Command line មួយណាប្រើសម្រាប់ប្តូរលេខសម្ងាត់ User?</p>
+            <span><input type="radio" name="question10" value="passwf">ក. passwf</span>
+            <span><input type="radio" name="question10" value="useradd">ខ. useradd</span>
+            <span><input type="radio" name="question10" value="passwd">គ. passwd</span>
+            <span><input type="radio" name="question10" value="user passwd">ឃ. user passwd</span>
+            <span><input type="radio" name="question10" value="sudo passwd">ង. sudo passwd</span>
+        </div>
+
+        <div>
+            <p>11. តើ Command line មួយណាប្រើសម្រាប់ log on User?</p>
+            <span><input type="radio" name="question11" value="su - user">ក. su - user</span>
+            <span><input type="radio" name="question11" value="sudo user">ខ. sudo user</span>
+            <span><input type="radio" name="question11" value="deluser">គ. deluser</span>
+            <span><input type="radio" name="question11" value="logon user">ឃ. logon user</span>
+            <span><input type="radio" name="question11" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>12. តើ Command line មួយណាប្រើសម្រាប់ចូល root user?</p>
+            <span><input type="radio" name="question12" value="sudo --">ក. sudo --</span>
+            <span><input type="radio" name="question12" value="sudo apt">ខ. sudo apt</span>
+            <span><input type="radio" name="question12" value="sudo -i">គ. sudo -i</span>
+            <span><input type="radio" name="question12" value="root">ឃ. root</span>
+            <span><input type="radio" name="question12" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>13. តើ Command line មួយណាប្រើសម្រាប់ clear terminal?</p>
+            <span><input type="radio" name="question13" value="delete">ក. delete</span>
+            <span><input type="radio" name="question13" value="cls">ខ. cls</span>
+            <span><input type="radio" name="question13" value="clear">គ. clear</span>
+            <span><input type="radio" name="question13" value="exit">ឃ. exit</span>
+            <span><input type="radio" name="question13" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>14. តើ Command line មួយណាប្រើសម្រាប់ log out user?</p>
+            <span><input type="radio" name="question14" value="exit">ក. exit</span>
+            <span><input type="radio" name="question14" value="useradd">ខ. useradd</span>
+            <span><input type="radio" name="question14" value="deluser">គ. deluser</span>
+            <span><input type="radio" name="question14" value="log out">ឃ. log out</span>
+            <span><input type="radio" name="question14" value="sudo">ង. sudo</span>
+        </div>
+
+        <div>
+            <p>15. តើ Command line មួយណាប្រើសម្រាប់បង្ហាញ Location user កំពុងប្រើ?</p>
+            <span><input type="radio" name="question15" value="passwd">ក. passwd</span>
+            <span><input type="radio" name="question15" value="pwd">ខ. pwd</span>
+            <span><input type="radio" name="question15" value="show user">គ. show user</span>
+            <span><input type="radio" name="question15" value="userdel">ឃ. userdel</span>
+            <span><input type="radio" name="question15" value="sudo">ង. sudo</span>
+        </div>
+
+
+        <input type="button" id="btn" value="Submite" onclick="check()">
+    </form>
+    <script>
+        function check(){
+            var pt = 0;
+            var quiz1=document.quiz.question1.value;
+            var quiz2=document.quiz.question2.value;
+            var quiz3=document.quiz.question3.value;
+            var quiz4=document.quiz.question4.value;
+            var quiz5=document.quiz.question5.value;
+            var quiz6=document.quiz.question6.value;
+            var quiz7=document.quiz.question7.value;
+            var quiz8=document.quiz.question8.value;
+            var quiz9=document.quiz.question9.value;
+            var quiz10=document.quiz.question10.value;
+            var quiz11=document.quiz.question11.value;
+            var quiz12=document.quiz.question12.value;
+            var quiz13=document.quiz.question13.value;
+            var quiz14=document.quiz.question14.value;
+            var quiz15=document.quiz.question15.value;
+            if (quiz1=="mkdir") {pt++}
+            if (quiz2=="rmdir") {pt++}
+            if (quiz3=="rm -r") {pt++}
+            if (quiz4=="touch") {pt++}
+            if (quiz5=="vi namefile") {pt++}
+            if (quiz6=="adduser") {pt++}
+            if (quiz7=="deluser") {pt++}
+            if (quiz8=="mv") {pt++}
+            if (quiz9=="getent group") {pt++}
+            if (quiz10=="passwd") {pt++}
+            if (quiz11=="su - user") {pt++}
+            if (quiz12=="sudo -i") {pt++}
+            if (quiz13=="clear") {pt++}
+            if (quiz14=="exit") {pt++}
+            if (quiz15=="pwd") {pt++}
+            if (pt<=7) {
+                document.getElementById('pt').innerHTML='ពិន្ទុ'+' '+pt+++' '+'អត់មើលមេរៀនទេយើង';  
+            }
+            if (pt>=7) {
+                document.getElementById('pt').innerHTML='ពិន្ទុ'+' '+pt+++' '+'ធ្វើបានល្អ';
+            }
+        }
+    </script>
+</body>
+</html>
